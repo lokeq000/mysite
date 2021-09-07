@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="popup">
+        <div class="popup__inner">
+            <div class="popup__title">
+                <h1>Немного информации</h1>
+               
+            </div>
+            <div class="popup__subT"> <p>Моё полное имя: Пацуков Алексей Алексеевич. Мне 20 лет, живу в Волжском. 
+                на данный момент активно изучаю js и Vue. Обучаюсь заочно в ВолгГТУ на факультете подготовки инженерных кадров. 
+                Есть свои учебные проекты, ссылку на гитхаб оставлю ниже.
+            </p> 
+            <div><a href="https://github.com/lokeq000" class="link">Гитхаб</a></div>
+            <div><a href="https://t.me/lokeq000" class="link">Telegram</a></div>
+        </div>
+        
+            <div class="popup__closeBtn"><button class="btn" id="closeBtn">Закрыть</button></div>
+        </div>
+    </div>
+
+    <div id="particles-js">
+        <div class="portfolio">
+            <div class="portfolio__inner">
+                <div class="portfolio__txt">
+              Моё портфолио
+                </div>
+                <div class="portfolio__btn"><button class="btn" id="about">обо мне</button></div>
+            </div>
+        </div>            
+     </div>
+
+     <div class="slider">
+        <div class="slider__title"><div class="title">Мои навыки</div></div>
+        <div class="slideshow-container">
+            <div class="slides fade">
+                <img src="mysite/assets/img/js.jpg" style="width:100%" alt="#">
+            </div>
+            <div class="slides fade">
+               <img src="mysite/assets/img/html5.png" style="width:100%" alt="#">
+           </div>
+           <div class="slides fade">
+               <img src="mysite/assets/img/css.jpg" style="width:100%" alt="#">
+           </div>
+           <div class="slides fade">
+               <img src="mysite/assets/img/vuejs.png" style="width:100%" alt="#">
+           </div>
+           <a  class="prev" onclick="plusSlides(-1)">&#10094</a>
+           <a  class="next" onclick="plusSlides(1)">&#10095</a>
+        </div>
+
+     </div>
+   
+    
+
+
+ 
+  
+  
+  
+    <script src="main.js"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>    
+</body>
+</html>
