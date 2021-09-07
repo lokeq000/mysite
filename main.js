@@ -19,7 +19,7 @@ function showSlides(n){
     if (n < 1){
         slideIndex = slides.length
     }
-    console.log(slideIndex)
+    
     slides.forEach((e)=>{e.style.display="none"})
     slides[slideIndex - 1].style.display = 'block'
 }
