@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,22 +8,25 @@
     <title>MyPortfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <div class="popup">
         <div class="popup__inner">
             <div class="popup__title">
                 <h1>Немного информации</h1>
-               
+
             </div>
-            <div class="popup__subT"> <p>Моё полное имя: Пацуков Алексей Алексеевич. Мне 20 лет, живу в Волжском. 
-                на данный момент активно изучаю js и Vue. Обучаюсь заочно в ВолгГТУ на факультете подготовки инженерных кадров. 
-                Есть свои учебные проекты, ссылку на гитхаб оставлю ниже.
-            </p> 
-            <div><a href="https://github.com/lokeq000" class="link">Гитхаб</a></div>
-            <div><a href="https://t.me/lokeq000" class="link">Telegram</a></div>
-        </div>
-        
+            <div class="popup__subT">
+                <p>Моё полное имя: Пацуков Алексей Алексеевич. Мне 20 лет, живу в Волжском.
+                    на данный момент активно изучаю js и Vue. Обучаюсь заочно в ВолгГТУ на факультете подготовки
+                    инженерных кадров.
+                    Есть свои учебные проекты, ссылку на гитхаб оставлю ниже.
+                </p>
+                <div><a href="https://github.com/lokeq000" class="link">Github</a></div>
+                <div><a href="https://t.me/lokeq000" class="link">Telegram</a></div>
+            </div>
+
             <div class="popup__closeBtn"><button class="btn" id="closeBtn">Закрыть</button></div>
         </div>
     </div>
@@ -31,43 +35,115 @@
         <div class="portfolio">
             <div class="portfolio__inner">
                 <div class="portfolio__txt">
-              Моё портфолио
+                    Моё портфолио
                 </div>
                 <div class="portfolio__btn"><button class="btn" id="about">обо мне</button></div>
             </div>
-        </div>            
-     </div>
+        </div>
+    </div>
+        <div class="Ptitle"><h2>Мои работы</h2></div>
+    <div class="projects">
+        <div class="container">
+            <div class="projects__wrapper">
+                <div class="project__inner">
+                    <div class="project__img">
+                        <img class="Pimg" src="./assets/img/cinema.jpg" alt="">
+                    </div>
+                    <div class="project__desc">
+                        <div class="project__title">
+                            Каталог фильмов
+                        </div>
+                        <div class="project__txt">
+                         Данную работу выполнял на Vue с использованием Vuex,Vue router. Целью работы была демонстрация навыков работы с API. 
+                         <p>Ссылка на исходный код: <a href="https://github.com/lokeq000/my-cinema">https://github.com/lokeq000/my-cinema</a></p>
+                        </div>
+                        <div class="project__btn">
+                            <button class="btn">
+                                <a href="https://lokeq000.github.io/my-cinema/">Перейти</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
 
-     <div class="slider">
-        <div class="slider__title"><div class="title">Мои навыки</div></div>
+                <div class="project__inner">
+                    <div class="project__img">
+                        <img class="Pimg" src="./assets/img/landing.jpg" alt="">
+                    </div>
+                    <div class="project__desc">
+                        <div class="project__title">
+                            Лэндинг
+                        </div>
+                        <div class="project__txt">
+                            Сверстал небольшой лэндинг, адаптировал под мобильные устройства.
+                            <p>Ссылка на исходный код: <a href="https://github.com/lokeq000/Corporate-Landing-Page">https://github.com/lokeq000/Corporate-Landing-Page</a></p>
+                        </div>
+                        <div class="project__btn">
+                            <button class="btn">
+                                <a href="https://lokeq000.github.io/Corporate-Landing-Page/">Перейти</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project__inner">
+                    <div class="project__img">
+                        <img class="Pimg" src="./assets/img/game.jpg" alt="">
+                    </div>
+                    <div class="project__desc">
+                        <div class="project__title">
+                            Змейка
+                        </div>
+                        <div class="project__txt">
+                            Написал змейку на js и canvas.
+                            <p>Ссылка на исходный код: <a href="https://github.com/lokeq000/game">https://github.com/lokeq000/game</a></p>
+                        </div>
+                        <div class="project__btn">
+                            <button class="btn">
+                                <a href="https://lokeq000.github.io/game/">Перейти</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div class="slider">
+        <div class="slider__title">
+            <div class="title">Мои навыки</div>
+        </div>
         <div class="slideshow-container">
             <div class="slides fade">
                 <img src="./assets/img/js.jpg" style="width:100%" alt="#">
             </div>
             <div class="slides fade">
-               <img src="./assets/img/html5.png" style="width:100%" alt="#">
-           </div>
-           <div class="slides fade">
-               <img src="./assets/img/css.jpg" style="width:100%" alt="#">
-           </div>
-           <div class="slides fade">
-               <img src="./assets/img/vuejs.png" style="width:100%" alt="#">
-           </div>
-           <a  class="prev" onclick="plusSlides(-1)">&#10094</a>
-           <a  class="next" onclick="plusSlides(1)">&#10095</a>
+                <img src="./assets/img/html5.png" style="width:100%" alt="#">
+            </div>
+            <div class="slides fade">
+                <img src="./assets/img/css.jpg" style="width:100%" alt="#">
+            </div>
+            <div class="slides fade">
+                <img src="./assets/img/vuejs.png" style="width:100%" alt="#">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+            <a class="next" onclick="plusSlides(1)">&#10095</a>
         </div>
 
-     </div>
-   
-    
+    </div>
 
 
- 
-  
-  
-  
+
+
+
+
+
+
     <script src="main.js"></script>
     <script src="particles.js"></script>
-    <script src="app.js"></script>    
+    <script src="app.js"></script>
 </body>
+
 </html>

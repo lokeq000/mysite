@@ -1,10 +1,32 @@
+.Ptitle {
+  color: #bdbdbd;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 15px 0 55px 0;
+}
+
+@media (max-width: 768px) {
+  .Ptitle {
+    margin-bottom: 150px;
+  }
+}
+
 #particles-js {
   height: 100vh;
   background-color: #000;
 }
 
 * {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #000000;
 }
 
 .link {
@@ -157,6 +179,107 @@
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.project__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 100px;
+  height: 254px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+@media (max-width: 768px) {
+  .project__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .project__inner {
+    margin-bottom: 200px;
+  }
+}
+
+.project__desc {
+  position: relative;
+  color: #bdbdbd;
+  padding: 10px;
+}
+
+.project__desc div {
+  margin-bottom: 10px;
+}
+
+.project__btn {
+  position: absolute;
+  right: 15px;
+  bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .project__btn {
+    position: static;
+    margin-top: 20px;
+  }
+}
+
+.project__title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .project__title {
+    margin-top: 15px;
+  }
+}
+
+.project__txt {
+  max-width: 500px;
+}
+
+@media (max-width: 768px) {
+  .project__txt {
+    max-width: 450px;
+  }
+}
+
+.project__img {
+  opacity: .7;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  max-width: 100%;
+  width: 500px;
+  max-height: 254px;
+}
+
+@media (max-width: 768px) {
+  .project__img {
+    margin: 0 auto;
+  }
+}
+
+.project__img img {
+  -webkit-box-shadow: 0px 0px 15px #8a8a8a;
+          box-shadow: 0px 0px 15px #8a8a8a;
+  max-width: 100%;
+  border-radius: 5px;
 }
 
 .slider {
